@@ -10,6 +10,35 @@
 #FFAA41
 */
 
+/* body{
+  
+} */
+
 .colorazul{
-    background-color: #B3DAF2;   
+    background-color: #0396A6;   
+}
+
+.corOFF{
+    background-color:#C4EAF2;
+}
+
+.btnCarrou{
+    background-color: rgba(116, 110, 110, 0.5);
+    width: max-content;
+    height: auto;
+}
+
+.btnPerson{
+    text-decoration: none;
+}
+
+.btnPerson:hover{
+    color: black;
+}
+
+.sub-titulo{
+    width: fit-content;
+    /* centralizar caixa */
+    margin: 0 auto;
+    /*  */
 }
