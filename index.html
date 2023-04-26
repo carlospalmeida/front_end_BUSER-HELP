@@ -17,43 +17,17 @@
 
 </head>
 
-<body>
+<body class="pt-5">
+
   <header>
-    <!-- <nav class="navbar navbar-expand-sm navbar-ligh fixed-top colorazul">
-      <div class="container-fluid">
-        <img src="images/LOGO.png" width="100px">
-        <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
-          data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
-          aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="collapsibleNavId">
-          <ul class="navbar-nav ms-auto mt-3 mt-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" href="#" aria-current="page">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Configurações</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Perfil</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Suporte</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav> -->
-
-
     <!-- teste -->
     <nav class="navbar navbar-light fixed-top colorazul">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#"><strong>Borá-la</strong></a>
+        <img src="images/LOGO.png" width="90px">
+        <!-- <a class="navbar-brand" href="#"><strong>Borá-la</strong> -->
         <button class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
           aria-controls="offcanvasNavbar">
-          <img src="https://cdn-icons-png.flaticon.com/512/16/16492.png" width="20px">
+          <img src="images/icons8-chevron-right-ios-16-favicons/Web/icons8-chevron-right-ios-16-32.png" width="20px">
         </button>
         <div class="offcanvas offcanvas-end corOFF" tabindex="-1" id="offcanvasNavbar"
           aria-labelledby="offcanvasNavbarLabel">
@@ -76,8 +50,8 @@
               </li>
               <li class="nav-item">
                 <a class="nav-item" href="#">
-                  <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    Registrar
+                  <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#ModalLogin">
+                    Registrar/logar
                   </button>
                 </a>
               </li>
@@ -87,8 +61,8 @@
       </div>
     </nav>
 
-    <!-- Modal -->
-    <div class="modal fade modal-dialog modal-lg" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+    <!-- Modal de login -->
+    <div class="modal fade modal-dialog modal-lg" id="ModalLogin" tabindex="-1" aria-labelledby="exampleModalLabel"
       aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
@@ -111,111 +85,82 @@
           <div class="modal-footer">
             <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Sair</button>
             <button type="button" class="btn btn-outline-primary">Inicar seção</button>
+            <button type="button" class="btn btn-outline-success" data-bs-toggle="modal"
+              data-bs-target="#ModalRegistro">Registrar</button>
           </div>
         </div>
       </div>
     </div>
 
-  </header>
+    <!-- MODAL DE REGISTRO -->
 
-  <main class="vh-100">
+    <div class="modal fade" id="ModalRegistro" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Faça seu registro</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
 
+          <div class="modal-body">
 
+            <!-- Email -->
+            <div class="mb-3">
+              <label for="" class="form-label">Email</label>
+              <input type="email" class="form-control" name="" id="" aria-describedby="emailHelpId"
+                placeholder="abc@mail.com">
+            </div>
 
-    <section id="Texto e assunto oficial">
-      <div class="container mt-lg-5">
+            <!-- senha -->
+            <div class="mb-3">
+              <label for="" class="form-label">Password</label>
+              <input type="password" class="form-control" name="" id="" placeholder="">
+            </div>
 
-        <img
-          src="https://img.freepik.com/vetores-gratis/fundo-de-design-elegante-moderno-abstrato-azul_1017-32105.jpg?w=2000"
-          width="400px">
+            <!-- Nome de usuario -->
+            <div class="mb-3">
+              <label for="" class="form-label">Nome do usuario</label>
+              <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+            </div>
 
-        <p class="container">
-        <h2><strong>BEM VINDO</strong></h2>
-        Lorem ipsum, dolor sit amet consectetur <mark>dipisicing eli</mark> at. Magnam neque officia esse tenetur fuga
-        maiores atque ad
-        saepe voluptate illo. Nulla quae modi ipsum exercitationem expedita, quo quasi dignissimos fugiat.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci similique perferendis praesentium blanditiis
-        quo
-        magni soluta ex, cum officia accusantium in impedit accusamus debitis nostrum natus ipsa consectetur nisi iusto.
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam neque officia esse tenetur fuga maiores atque
-        ad
-        saepe voluptate illo. <mark>Nulla</mark> quae modi ipsum exercitationem expedita, quo quasi dignissimos fugiat.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci similique perferendis praesentium blanditiis
-        quo
-        magni soluta ex, cum officia accusantium in impedit accusamus debitis nostrum natus ipsa consectetur nisi iusto.
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam neque officia esse tenetur fuga maiores atque
-        ad
-        saepe voluptate illo. Nulla quae modi ipsum exercitationem expedita, quo quasi dignissimos fugiat.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci similique perferendis praesentium blanditiis
-        quo
-        magni soluta ex, cum officia accusantium in impedit accusamus debitis nostrum natus ipsa consectetur nisi iusto.
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam neque officia esse tenetur fuga maiores atque
-        ad
-        saepe voluptate illo. Nulla quae modi ipsum exercitationem expedita, quo quasi dignissimos fugiat.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci similique perferendis praesentium blanditiis
-        quo
-        magni soluta ex, cum officia accusantium in impedit accusamus debitis nostrum natus ipsa consectetur nisi iusto.
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam neque officia esse tenetur fuga maiores atque
-        ad
-        saepe voluptate illo. Nulla quae modi ipsum exercitationem expedita, quo quasi dignissimos fugiat.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci similique perferendis praesentium blanditiis
-        quo
-        magni soluta ex, cum officia accusantium in impedit accusamus debitis nostrum natus ipsa consectetur nisi iusto.
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam neque officia esse tenetur fuga maiores atque
-        ad
-        saepe voluptate illo. Nulla quae modi ipsum exercitationem expedita, quo quasi dignissimos fugiat.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci similique perferendis praesentium blanditiis
-        quo
-        magni soluta ex, cum officia accusantium in impedit accusamus debitis nostrum natus ipsa consectetur nisi iusto.
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam neque officia esse tenetur fuga maiores atque
-        ad
-        saepe voluptate illo. Nulla quae modi ipsum exercitationem expedita, quo quasi dignissimos fugiat.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci similique perferendis praesentium blanditiis
-        quo
-        magni soluta ex, cum officia accusantium in impedit accusamus debitis nostrum natus ipsa consectetur nisi iusto.
-        </p>
-
-        <br>
-    </section>
-
-    <section id="Servico" class="mt-5 mb-5">
-
-      <h2 data-aos="zoom-in-up" data-aos-duration="900" class="sub-titulo border-bottom border-5 border-secondary">
-        Serviços</h2>
-      <p data-aos="fade-left" class="text-center mt-2">Verifique nossos servicos</p>
-
-      <div class="container">
-
-        <div class="row">
-          <div class="col-md-4 m-3 m-md-0 ">
-            <div class="card" data-aos="flip-left" data-aos-duration="900" data-aos-delay="1700">
-              <div class="cor card-header text-center p-4">
-                <strong>Usuario</strong>
-              </div>
-              <div class="card-body">
-                <ul class="list-group list-group-flush text-center">
-
-                  <li class="list-group-item"><strong>Ver</strong> horarios da linhas desejadas</li>
-                  <li class="list-group-item">Chegar <strong>pontos</strong> proximos</li>
-                  <li class="list-group-item">Acompanhar em tempo <strong>real</strong> o trajeto de sua linha</li>
-                </ul>
-              </div>
-
-              <div class="card-footer text-center">
-                <button type="button" class="btn btn-outline-primary">
-                  <a class="btnPerson" href="Pincipal.html">Comecar</a>
-                </button>
-              </div>
-
+            <!-- Telefone -->
+            <div class="mb-3">
+              <label for="" class="form-label">Telefone</label>
+              <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
             </div>
 
           </div>
-
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-success" data-bs-toggle="modal"
+              data-bs-target="#ModalLogin">Voltar</button>
+            <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Sair</button>
+            <button type="button" class="btn btn-outline-primary">Inicar seção</button>
+          </div>
         </div>
+      </div>
+    </div>
+  </header>
 
+  <main>
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="mb-3">
+            <label for="" class="form-label">Ponto de partida</label>
+            <img src="images/ic-current-location_97657.png" width="30px" id="LocaAtual">
+            <input type="text" class="form-control" name="PontoInicio" id="" aria-describedby="helpId" placeholder="">
+          </div>
+        </div>
+        <div class="col-md-9">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6168.468081019774!2d-45.85544711178482!3d-23.17775156556277!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cc4bc96c8e4b37%3A0x961089d48d0b5240!2sSenac%20S%C3%A3o%20Jos%C3%A9%20dos%20Campos!5e0!3m2!1spt-BR!2sbr!4v1682538140621!5m2!1spt-BR!2sbr"
+            width="100%" height="800" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
       </div>
 
-    </section>
+
+    </div>
 
   </main>
 
