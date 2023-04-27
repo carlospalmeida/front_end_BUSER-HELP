@@ -129,6 +129,20 @@
               <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
             </div>
 
+            <!-- Data de Nascimento -->
+            <div class="mb-3">
+              <label for="" class="form-label">Data de nascimento</label>
+              <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+            </div>
+
+
+            <!-- Termos e condicoes -->
+
+            <div>
+              <p>ao marcar esta opção estara de acordo com os <a href="Termos.html">Termos e condições</a></p>
+            </div>
+
+
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-outline-success" data-bs-toggle="modal"
@@ -141,15 +155,53 @@
     </div>
   </header>
 
+
+
   <main>
-    <div class="container mt-5">
+
+    <!-- Barra lateral -->
+    <div class="container mt-5" id="BarraLateralEsquerda">
       <div class="row">
         <div class="col-md-3">
-          <div class="mb-3">
-            <label for="" class="form-label">Ponto de partida</label>
-            <img src="images/ic-current-location_97657.png" width="30px" id="LocaAtual">
-            <input type="text" class="form-control" name="PontoInicio" id="" aria-describedby="helpId" placeholder="">
+
+          <!-- Linhas/pesquisar linhas -->
+          <div class="mb-lg-5">
+            <h5><a href="linhas.html" id="Linha" class="tracking-in-contract">Linhas</a></h5>
           </div>
+          
+
+          <!-- Pontos -->
+
+          <!-- Form de ponto partida -->
+          <div class="mb-3">
+            <label for="" class="form-label">
+              <h5>Ponto de partida:</h5>
+            </label>
+            <img src="images/ic-current-location_97657.png" width="30px" id="LocaAtual">
+            <input type="text" class="form-control" name="PontoInicio" id="PontoInicio" aria-describedby="helpId"
+              placeholder="">
+          </div>
+
+          <!-- Form destino -->
+          <div class="mb-3">
+            <label for="" class="form-label">
+              <h5>Destino:</h5>
+            </label>
+            <input type="text" class="form-control" name="PontoInicio" id="PontoInicio" aria-describedby="helpId"
+              placeholder="">
+          </div>
+
+          <!-- Mostra as linhas/onibus proximo do usuario -->
+          <h5>Linhas proximas de você:</h5>
+          <div class="mb-3">
+            <select class="form-select form-select-lg" name="" id="">
+              <option value="">1</option>
+              <option value="">2</option>
+              <option value="">3</option>
+            </select>
+          </div>
+
+
         </div>
         <div class="col-md-9">
           <iframe
@@ -158,6 +210,7 @@
             referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>
+
 
 
     </div>
@@ -169,6 +222,14 @@
       <p>Desenvolvido por Carlos Eduardo</p>
     </div>
   </footer>
+
+  <!-- POPUP para usar o carona -->
+  <div id="useCarona" class="popup slide-left">
+    <div class="fechar">X</div>
+    <h5>Precisa de carona?</h5>
+    <p>Use nosso recurso de carona para ir para qualquer lugar,basta se registrar e USAR!!</p>
+    <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#ModalRegistro">Registrar</button>
+  </div>
 
 
 
