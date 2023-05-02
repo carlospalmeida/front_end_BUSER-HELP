@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <title>BuserHelper</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+
+    <!-- css personalizado -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body class="pt-5">
+
+    <header>
+        <!-- teste -->
+        <nav class="navbar navbar-light fixed-top colorazul">
+            <div class="container-fluid">
+                <img src="images/LOGO.png" width="90px">
+                <!-- <a class="navbar-brand" href="#"><strong>Borá-la</strong> -->
+                <button class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                    aria-controls="offcanvasNavbar">
+                    <img src="images/icons8-chevron-right-ios-16-favicons/Web/icons8-chevron-right-ios-16-32.png"
+                        width="20px">
+                </button>
+                <div class="offcanvas offcanvas-end corOFF" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="confi.html">Configurações</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="perfil.html">Perfil</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="suport.html">Suporte</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-item" href="#">
+                                    <button type="button" class="btn p-0" data-bs-toggle="modal"
+                                        data-bs-target="#ModalLogin">
+                                        Registrar/logar
+                                    </button>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Modal de login -->
+        <div class="modal fade modal-dialog modal-lg" id="ModalLogin" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <p class="text-center">
+                        <strong>Faça o login para utilizar o Recurso Carona</strong>
+                    </p>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <label for="" class="form-label mt-1">Email</label>
+                            <input type="email" class="form-control" name="" id="" aria-describedby="emailHelpId"
+                                placeholder="abc@mail.com">
+                        </div>
+                        <div class="mb-3">
+                            <label for="" class="form-label mt-1 m-1">Password</label>
+                            <input type="password" class="form-control" name="" id="" placeholder="">
+                        </div>
+                        <a href="senhaerrada.html">Esqueci a Senha</a>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Sair</button>
+                        <button type="button" class="btn btn-outline-primary">Inicar seção</button>
+                        <button type="button" class="btn btn-outline-success" data-bs-toggle=""
+                            data-bs-target="#ModalRegistro">Registrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+    <main>
+
+        <!-- Barra lateral -->
+        <div class="container mt-5" id="BarraLateralEsquerda">
+            <div class="row">
+                <div class="col-md-3">
+
+                    <!-- linhas -->
+                    <div class="mb-3">
+                        <label for="" class="form-label">Linhas perto de você</label>
+                        <select class="form-select form-select-lg" name="" id="">
+                            <option selected>230</option>
+                        </select>
+                    </div>
+
+                    <!-- Form de ponto partida -->
+                    <div class="mb-3">
+                        <label for="" class="form-label">
+                            <h5>Ponto de partida:</h5>
+                        </label>
+                        <img src="images/ic-current-location_97657.png" width="30px" id="LocaAtual">
+                        <input type="text" class="form-control" name="PontoInicio" id="PontoInicio"
+                            aria-describedby="helpId" placeholder="">
+                    </div>
+
+                    <!-- Form destino -->
+                    <div class="mb-3">
+                        <label for="" class="form-label">
+                            <h5>Destino:</h5>
+                        </label>
+                        <input type="text" class="form-control" name="PontoInicio" id="PontoInicio"
+                            aria-describedby="helpId" placeholder="">
+                    </div>
+
+                    <!-- Linhas para a rota -->
+
+                    <!-- linhas -->
+                    <div class="mb-3">
+                        <label for="" class="form-label">Linhas em rua rota:</label>
+                        <select class="form-select form-select-lg" name="" id="">
+                            <option selected>230</option>
+                            <option selected>314</option>
+                        </select>
+                    </div>
+
+                    <!-- Horario de chegada: -->
+
+
+                </div>
+
+                <div class="col-md-9">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6168.468081019774!2d-45.85544711178482!3d-23.17775156556277!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cc4bc96c8e4b37%3A0x961089d48d0b5240!2sSenac%20S%C3%A3o%20Jos%C3%A9%20dos%20Campos!5e0!3m2!1spt-BR!2sbr!4v1682538140621!5m2!1spt-BR!2sbr"
+                        width="100%" height="800" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+
+            </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Desenvolvido por Carlos Eduardo</p>
+        </div>
+    </footer>
+
+    <!-- POPUP para usar o carona -->
+    <div id="useCarona" class="popup slide-left">
+        <div class="fechar">X</div>
+        <h5>Precisa de carona?</h5>
+        <p>Use nosso recurso de carona para ir para qualquer lugar,basta se registrar e USAR!!</p>
+        <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="">USAR</button>
+    </div>
+
+
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+        </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+        </script>
+
+    <!-- js personalizado -->
+    <script src="JS/code.js"></script>
+
+</body>
+
+</html>
