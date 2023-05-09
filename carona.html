@@ -20,7 +20,7 @@
 <body class="pt-5">
 
   <header>
-    <!-- Navbar -->
+    <!-- teste -->
     <nav class="navbar navbar-light fixed-top colorazul">
       <div class="container-fluid">
         <img src="images/LOGO.png" width="90px">
@@ -37,7 +37,7 @@
           <div class="offcanvas-body">
             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="confi.html">Configurações</a>
@@ -94,7 +94,7 @@
         </div>
       </div>
     </div>
-
+ 
   </header>
 
 
@@ -107,15 +107,6 @@
         <div class="col-md-3">
 
     
-          <!-- Linhas/pesquisar linhas -->
-          <div class="mb-lg-3">
-            <h5><a href="linhas.html" id="Linha" class="tracking-in-contract">Linhas</a></h5>
-          </div>
-
-          <!-- <div class="mb-lg-3">
-            <h5><a href="" id="ponto" class="tracking-in-contract">Pontos</a></h5>
-          </div> -->
-
 
           <!-- Form de ponto partida -->
           <div class="mb-3">
@@ -136,35 +127,73 @@
               placeholder="">
           </div>
 
-          <!-- Mostra as linhas/onibus proximo do usuario -->
-          <h5>Linhas proximas de você:</h5>
-          <div class="mb-3">
-            <select class="form-select form-select-lg" name="" id="">
-              <option value="">1</option>
-              <option value="">2</option>
-              <option value="">3</option>
-            </select>
-          </div>
+          <!-- Form ver motoristas disponiveis -->
 
-          <h5>Pontos e terminais proximas á você:</h5>
-          <div class="mb-3">
-            <select class="form-select form-select-lg" name="" id="">
-              <option value="">1</option>
-              <option value="">2</option>
-              <option value="">3</option>
-            </select>
-          </div>
+          <div class="list-group">
+            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start" aria-current="true">
+                <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">Motorista 1</h5>
+                    <small class="text-muted">Description</small>
+                </div>
+                <p class="mb-1">Motorista 2</p>
+                <small class="text-muted">paragraph footer</small>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">Motorista 3</h5>
+                    <small class="text-muted">Description</small>
+                </div>
+                <p class="mb-1">Paragraph</p>
+                <small class="text-muted">paragraph footer</small>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">Motorista 4</h5>
+                    <small class="text-muted">Description</small>
+                </div>
+                <p class="mb-1">Paragraph</p>
+                <small class="text-muted">paragraph footer</small>
+            </a>
 
-          
-          <!-- mostra a viagem necessaria para ir ao destino -->
-
-          <h5>Viagem:</h5>
-          <div class="card">
-            <div class="card-body">
-              <p class="card-text">va para o ponto x</p>
+            <br>
+            
+            <button type="button" class="btn btn-outline-success btn-lg" data-bs-toggle="modal" data-bs-target="#modalcarona">
+              Solicitar
+            </button>
+            
+            
+            <div class="modal fade" id="modalcarona" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalTitleId">Pedindo carona</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <h5>Seu carona:</h5>
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1">Motorista 1</h5>
+                                <small class="text-muted">Description</small>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save</button>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
+            
+            
+            <!-- Optional: Place to the bottom of scripts -->
+            <script>
+                const myModal = new bootstrap.Modal(document.getElementById('modalId'), options)
+            
+            </script>
 
+
+
+          </div>
 
 
 
@@ -189,17 +218,7 @@
     </div>
   </footer>
 
-  <!-- POPUP para usar o carona -->
-  <div id="useCarona" class="popup slide-left">
-    <div class="fechar">X</div>
-    <h5>Precisa de carona?</h5>
-    <p>Use nosso recurso de carona para ir para qualquer lugar,basta se registrar e USAR!!</p>
-    <a href="login.html">
-      <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="">USAR</button>
-    </a>  
-  </div>
-
-
+  
 
   <!-- Bootstrap JavaScript Libraries -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
