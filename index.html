@@ -40,20 +40,7 @@
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="confi.html">Configurações</a>
-              </li>
-              <li class="nav-item">
                 <a class="nav-link" href="perfil.html">Perfil</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="suport.html">Suporte</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-item" href="#">
-                  <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#ModalLogin">
-                    Registrar/logar
-                  </button>
-                </a>
               </li>
             </ul>
           </div>
@@ -71,7 +58,7 @@
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <p class="text-center">
-           <strong>Faça o login para utilizar o Recurso Carona</strong> 
+            <strong>Faça o login para utilizar o Recurso Carona</strong>
           </p>
           <div class="modal-body">
             <div class="mb-3">
@@ -106,7 +93,7 @@
       <div class="row">
         <div class="col-md-3">
 
-    
+
           <!-- Linhas/pesquisar linhas -->
           <div class="mb-lg-3">
             <h5><a href="linhas.html" id="Linha" class="tracking-in-contract">Linhas</a></h5>
@@ -155,7 +142,7 @@
             </select>
           </div>
 
-          
+
           <!-- mostra a viagem necessaria para ir ao destino -->
 
           <h5>Viagem:</h5>
@@ -184,19 +171,26 @@
   </main>
 
   <footer class="p-5 mt-5 corrodape text-light">
-    <div class="container">
-      <p>Desenvolvido por Carlos Eduardo</p>
+    <div class="container py-4">
+      <div class="row gy-4 gx-5">
+        <div class="col-lg-4 col-md-6">
+          <h5 class="h1 text-white">CAEP</h5>
+          <p class="small text-muted">Centro de administração empresarial Pereira <br> Bora-lá.</p>
+          <p class="small text-muted mb-0">&copy; Copyrights. All rights reserved. <a class="text-primary"
+              href="https://www.linkedin.com/in/carlos-eduardo-pereira-almeida-251b03239/">Carlos Eduardo</a></p>
+        </div>
+      </div>
     </div>
   </footer>
 
   <!-- POPUP para usar o carona -->
-  <div id="useCarona" class="popup slide-left">
-    <div class="fechar">X</div>
+  <div id="usecarona" class="popup slide-left">
+    <div class="fechar" id="fecharuse">X</div>
     <h5>Precisa de carona?</h5>
     <p>Use nosso recurso de carona para ir para qualquer lugar,basta se registrar e USAR!!</p>
     <a href="login.html">
       <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="">USAR</button>
-    </a>  
+    </a>
   </div>
 
 
