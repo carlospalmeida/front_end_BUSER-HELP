@@ -42,13 +42,13 @@
               <li class="nav-item">
                 <a class="nav-link" href="perfil.html">Perfil</a>
               </li>
-              <li class="nav-item">
+              <!-- <li class="nav-item">
                 <a class="nav-item" href="#">
                   <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#ModalLogin">
                     Registrar/logar
                   </button>
                 </a>
-              </li>
+              </li> -->
             </ul>
           </div>
         </div>
@@ -65,7 +65,7 @@
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <p class="text-center">
-           <strong>Faça o login para utilizar o Recurso Carona</strong> 
+            <strong>Faça o login para utilizar o Recurso Carona</strong>
           </p>
           <div class="modal-body">
             <div class="mb-3">
@@ -88,7 +88,7 @@
         </div>
       </div>
     </div>
- 
+
   </header>
 
 
@@ -100,7 +100,7 @@
       <div class="row">
         <div class="col-md-3">
 
-    
+
 
           <!-- Form de ponto partida -->
           <div class="mb-3">
@@ -124,65 +124,68 @@
           <!-- Form ver motoristas disponiveis -->
 
           <div class="list-group">
-            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start" aria-current="true">
-                <div class="d-flex w-100 justify-content-between">
-                    <h5 class="mb-1">Motorista 1</h5>
-                    <small class="text-muted">Description</small>
-                </div>
-                <p class="mb-1">Motorista 2</p>
-                <small class="text-muted">paragraph footer</small>
+            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start"
+              aria-current="true">
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">Motorista 1</h5>
+                <small class="text-muted">Description</small>
+              </div>
+              <p class="mb-1">Motorista 2</p>
+              <small class="text-muted">paragraph footer</small>
             </a>
             <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-                <div class="d-flex w-100 justify-content-between">
-                    <h5 class="mb-1">Motorista 3</h5>
-                    <small class="text-muted">Description</small>
-                </div>
-                <p class="mb-1">Paragraph</p>
-                <small class="text-muted">paragraph footer</small>
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">Motorista 3</h5>
+                <small class="text-muted">Description</small>
+              </div>
+              <p class="mb-1">Paragraph</p>
+              <small class="text-muted">paragraph footer</small>
             </a>
             <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-                <div class="d-flex w-100 justify-content-between">
-                    <h5 class="mb-1">Motorista 4</h5>
-                    <small class="text-muted">Description</small>
-                </div>
-                <p class="mb-1">Paragraph</p>
-                <small class="text-muted">paragraph footer</small>
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">Motorista 4</h5>
+                <small class="text-muted">Description</small>
+              </div>
+              <p class="mb-1">Paragraph</p>
+              <small class="text-muted">paragraph footer</small>
             </a>
 
             <br>
-            
-            <button type="button" class="btn btn-outline-success btn-lg" data-bs-toggle="modal" data-bs-target="#modalcarona">
+
+            <button type="button" class="btn btn-outline-success btn-lg" data-bs-toggle="modal"
+              data-bs-target="#modalcarona">
               Solicitar
             </button>
-            
-            
-            <div class="modal fade" id="modalcarona" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="modalTitleId">Pedindo carona</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <h5>Seu carona:</h5>
-                            <div class="d-flex w-100 justify-content-between">
-                                <h5 class="mb-1">Motorista 1</h5>
-                                <small class="text-muted">Description</small>
-                            </div>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Save</button>
-                        </div>
+
+
+            <div class="modal fade" id="modalcarona" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false"
+              role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="modalTitleId">Pedindo carona</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <h5>Seu carona:</h5>
+                    <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1">Motorista 1</h5>
+                      <small class="text-muted">Description</small>
                     </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-success">Pedir</button>
+                  </div>
                 </div>
+              </div>
             </div>
-            
-            
+
+
             <!-- Optional: Place to the bottom of scripts -->
             <script>
-                const myModal = new bootstrap.Modal(document.getElementById('modalId'), options)
-            
+              const myModal = new bootstrap.Modal(document.getElementById('modalId'), options)
+
             </script>
 
 
@@ -218,7 +221,7 @@
       </div>
     </div>
   </footer>
-  
+
 
   <!-- Bootstrap JavaScript Libraries -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"

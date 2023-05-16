@@ -22,6 +22,14 @@ body{
   background-color: #444;
 }
 
+.acord{
+  background-color: #B3DAF2;
+}
+
+.acord:hover{
+  background-color: #b3daf2d5;
+}
+
 #Linha{
     text-decoration: none;
     color: #313131;
