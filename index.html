@@ -42,6 +42,9 @@
               <li class="nav-item">
                 <a class="nav-link" href="perfil.html">Perfil</a>
               </li>
+              <li class="nav-item">
+                <a class="nav-link" href="login.html">Registrar/logar</a>
+              </li>
             </ul>
           </div>
         </div>
@@ -109,9 +112,15 @@
             <label for="" class="form-label">
               <h5>Ponto de partida:</h5>
             </label>
-            <img src="images/ic-current-location_97657.png" width="30px" id="LocaAtual">
             <input type="text" class="form-control" name="PontoInicio" id="PontoInicio" aria-describedby="helpId"
               placeholder="">
+            <label for="" class="form-label">
+              <a href="" id="localatual">           
+                <h5>
+                  <img src="images/ic-current-location_97657.png" width="20px" id="LocaAtual"> Local atual
+                </h5>
+              </a>
+            </label>
           </div>
 
           <!-- Form destino -->
@@ -207,6 +216,15 @@
 
   <!-- js personalizado -->
   <script src="JS/code.js"></script>
+
+  <script>
+    var fecharpopup = document.getElementById("fecharuse");
+
+    fecharpopup.addEventListener("click", ()=>{
+        var popup = document.getElementById("usecarona");
+        popup.style.display = "none";
+    })
+  </script>
 
 </body>
 

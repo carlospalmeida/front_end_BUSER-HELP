@@ -21,9 +21,8 @@
 
     <header>
         <!-- Navbar -->
-        <nav class="navbar navbar-light fixed-top colorazul">
+        <!-- <nav class="navbar navbar-light fixed-top colorazul">
             <div class="container-fluid">
-                <!-- <a class="navbar-brand" href="#"><strong>Borá-la</strong> -->
                 <button class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
                     aria-controls="offcanvasNavbar">
                     <img src="images/icons8-chevron-right-ios-16-favicons/Web/icons8-chevron-right-ios-16-32.png"
@@ -43,9 +42,9 @@
                     </div>
                 </div>
             </div>
-        </nav>
+        </nav> -->
     </header>
-    
+
     <main>
         <div class="container">
             <div class="row">
@@ -55,24 +54,138 @@
                     <p>
                         Fique ciente que para usar este recurso é necessario apenas um<br>
                         Pequeno registro,fazemos isto para a segunça do propio motorista e <br>
-                        Passageiro,necessitamos apenas de seu email.<br>
+                        Passageiro.<br>
                     </p>
 
-                    <div class="mb-3">
-                        <label for="" class="form-label">E-mail</label>
-                        <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
-                    </div>
 
+                    <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal"
+                        data-bs-target="#Registro">Registrar
+                    </button>
 
-                    <div class="mb-3">
-                        <label for="" class="form-label">Senha</label>
-                        <input type="password" class="form-control" name="" id="" placeholder="">
-                    </div>
-
-                    <a href="carona.html">
-                        <button type="button" class="btn btn-outline-primary">Registrar</button>
-                    </a>
                 </div>
+
+
+                <div class="modal" id="Registro" tabindex="-1">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="modalTitleId">Registro</h5>
+                            </div>
+                            <div class="modal-body">
+                                <h4>Geral:</h4>
+
+                                <!-- usuario -->
+                                <div class="mb-3">
+                                    <label for="" class="form-label">Nome de usuario</label>
+                                    <input type="text" class="form-control" name="" id="" aria-describedby="helpId"
+                                        placeholder="">
+                                </div>
+
+                                <!-- email -->
+                                <div class="mb-3">
+                                    <label for="" class="form-label">Email</label>
+                                    <input type="text" class="form-control" name="" id="" aria-describedby="helpId"
+                                        placeholder="">
+                                </div>
+
+                                <!-- senha -->
+                                <div class="mb-3">
+                                    <label for="" class="form-label">Senha</label>
+                                    <input type="password" class="form-control" name="" id="" aria-describedby="helpId"
+                                        placeholder="">
+                                </div>
+
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" id="btncarona">
+                                    <label class="form-check-label" for="flexSwitchCheckDefault">Desejo ser
+                                        carona!</label>
+                                </div>
+
+                                <!-- Logar com google -->
+                                <h6>Cadastrar-se com:</h6>
+                                <img class="mb-2"
+                                    src="https://lh3.googleusercontent.com/jUoaTIlBn5ibfQcND2n5OMD6Z7xoqNj-ShHlFR6QuLffLXD5pS8V2eNg1rGlrsRrnDkoQ28O8UHzqzBQKAGY4l1CS2NQSq2SkRScK6FOjl82jppyohK-"
+                                    width="30px">
+
+                                <img class="m-3" src="https://www.facebook.com/images/fb_icon_325x325.png" width="30px">
+
+
+
+
+
+
+                                <div id="opcoes">
+                                    <h4 class="mb-3">Carona:</h4>
+                                    <!-- Area da carona -->
+
+                                    <div class="mb-3 mt-1">
+                                        <label for="" class="form-label"><strong>Região de trabalho:</strong></label>
+                                        <select class="form-select form-select-lg" name="" id="Regiao">
+                                            <option value="">Em qualquer lugar</option>
+                                            <option value="">Apenas na minha região(cidade)</option>
+                                        </select>
+                                    </div>
+                                    <!-- cadastro de veiculo -->
+                                    <div class="mb-3">
+                                        <label for="" class="form-label">Marca</label>
+                                        <input type="text" class="form-control" name="Marca" id="Marca"
+                                            aria-describedby="helpId" placeholder="">
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label for="" class="form-label">cor</label>
+                                        <input type="text" class="form-control" name="cor" id="Cor"
+                                            aria-describedby="helpId" placeholder="">
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label for="" class="form-label">Placa</label>
+                                        <input type="text" class="form-control" name="Placa" id="Placa"
+                                            aria-describedby="helpId" placeholder="">
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label for="" class="form-label">Modelo</label>
+                                        <input type="text" class="form-control" name="Modelo" id="Modelo"
+                                            aria-describedby="helpId" placeholder="">
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label for="" class="form-label">Proprietario</label>
+                                        <input type="text" class="form-control" name="Proprietario" id="Proprietario"
+                                            aria-describedby="helpId" placeholder="">
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label for="" class="form-label">Registro de cnh</label>
+                                        <input type="text" class="form-control" name="cnh" id="Cnh"
+                                            aria-describedby="helpId" placeholder="">
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label for="" class="form-label">Formas de pagamento</label>
+                                        <input type="text" class="form-control" name="pagamento" id="Pagamento"
+                                            aria-describedby="helpId" placeholder="" disabled>
+                                    </div>
+
+                                </div>
+
+
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                                <button type="button" class="btn btn-primary">Registrar</button>
+                                <button type="button" class="btn btn-success">Login</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
             </div>
         </div>
 
@@ -104,6 +217,25 @@
 
     <!-- js personalizado -->
     <script src="JS/code.js"></script>
+
+    <script>
+        var carona = document.getElementById('btncarona');
+        carona.addEventListener("click", () => {
+            if (carona.checked) {
+                document.getElementById('opcoes').style.display = 'block'
+            } else {
+                document.getElementById('opcoes').style.display = 'none'
+                //limpa os campos do formulário
+                document.getElementById('Marca').value = ''
+                document.getElementById('Cor').value = ''
+                document.getElementById('Placa').value = ''
+                document.getElementById('Modelo').value = ''
+                document.getElementById('Proprietario').value = ''
+                document.getElementById('Cnh').value = ''
+                document.getElementById('Pagamento').value = ''
+            }
+        })
+    </script>
 
 </body>
 

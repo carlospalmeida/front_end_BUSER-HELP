@@ -45,6 +45,14 @@ body{
   color: #313131;
 }
 
+#localatual{
+  text-decoration: none;
+  color: #0b3150;
+}
+
+#opcoes{
+  display: none;
+}
 
 .colorazul{
     background-color: #0396A6;   
