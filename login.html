@@ -20,29 +20,6 @@
 <body>
 
     <header>
-        <!-- Navbar -->
-        <!-- <nav class="navbar navbar-light fixed-top colorazul">
-            <div class="container-fluid">
-                <button class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-                    aria-controls="offcanvasNavbar">
-                    <img src="images/icons8-chevron-right-ios-16-favicons/Web/icons8-chevron-right-ios-16-32.png"
-                        width="20px">
-                </button>
-                <div class="offcanvas offcanvas-end corOFF" tabindex="-1" id="offcanvasNavbar"
-                    aria-labelledby="offcanvasNavbarLabel">
-                    <div class="offcanvas-header">
-                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
-                            aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body">
-                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                            </li>
-                    </div>
-                </div>
-            </div>
-        </nav> -->
     </header>
 
     <main>
@@ -125,7 +102,18 @@
                                             <option value="">Apenas na minha região(cidade)</option>
                                         </select>
                                     </div>
+
+                                    <div class="mb-3">
+                                        <label for="" class="form-label">Nome completo:</label>
+                                        <input type="text" class="form-control" name="nomemotorista" id="nomecompleto"
+                                            aria-describedby="helpId" placeholder="">
+                                    </div>
+
+                                    <h4 class="mb-3">Cadastro de seu veiculo:</h4>
+                                    <h5 class="mb-3">*Permitido apenas carro particular com documentação em dia</h5>
+
                                     <!-- cadastro de veiculo -->
+
                                     <div class="mb-3">
                                         <label for="" class="form-label">Marca</label>
                                         <input type="text" class="form-control" name="Marca" id="Marca"
@@ -162,11 +150,7 @@
                                             aria-describedby="helpId" placeholder="">
                                     </div>
 
-                                    <div class="mb-3">
-                                        <label for="" class="form-label">Formas de pagamento</label>
-                                        <input type="text" class="form-control" name="pagamento" id="Pagamento"
-                                            aria-describedby="helpId" placeholder="" disabled>
-                                    </div>
+
 
                                 </div>
 
@@ -176,19 +160,46 @@
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
                                 <button type="button" class="btn btn-primary">Registrar</button>
-                                <button type="button" class="btn btn-success">Login</button>
+                                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#Login">Login</button>
                             </div>
                         </div>
                     </div>
                 </div>
 
-
-
-
-
             </div>
-        </div>
 
+            <!-- Modal de login -->
+            <div class="modal" id="Login" tabindex="-1">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalTitleId">Login</h5>
+                        </div>
+                        <div class="modal-body">
+
+                            <!-- usuario -->
+                            <div class="mb-3">
+                                <label for="" class="form-label">Nome de usuario</label>
+                                <input type="text" class="form-control" name="" id="" aria-describedby="helpId"
+                                    placeholder="">
+                            </div>
+
+                            <!-- senha -->
+                            <div class="mb-3">
+                                <label for="" class="form-label">Senha</label>
+                                <input type="password" class="form-control" name="" id="" aria-describedby="helpId"
+                                    placeholder="">
+                            </div>
+
+                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                            <a href="carona.html"><button type="button" class="btn btn-success">Login</button></a> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
     </main>
 
     <footer class="p-5 mt-5 corrodape text-light">
