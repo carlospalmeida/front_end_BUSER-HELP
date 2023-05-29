@@ -20,6 +20,35 @@
 <body>
 
     <header>
+        <nav class="navbar navbar-light fixed-top colorazul">
+            <div class="container-fluid">
+                <img src="images/LOGO.png" width="90px">
+                <!-- <a class="navbar-brand" href="#"><strong>Borá-la</strong> -->
+                <button class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                    aria-controls="offcanvasNavbar">
+                    <img src="images/icons8-chevron-right-ios-16-favicons/Web/icons8-chevron-right-ios-16-32.png"
+                        width="20px">
+                </button>
+                <div class="offcanvas offcanvas-end corOFF" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="login.html">Registrar/logar</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        
     </header>
 
     <main>
@@ -160,7 +189,8 @@
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
                                 <button type="button" class="btn btn-primary">Registrar</button>
-                                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#Login">Login</button>
+                                <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                                    data-bs-target="#Login">Login</button>
                             </div>
                         </div>
                     </div>
@@ -192,7 +222,7 @@
                             </div>
 
                             <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
-                            <a href="carona.html"><button type="button" class="btn btn-success">Login</button></a> 
+                            <a href="carona.html"><button type="button" class="btn btn-success">Login</button></a>
                         </div>
                     </div>
                 </div>

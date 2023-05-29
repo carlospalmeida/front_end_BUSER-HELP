@@ -22,90 +22,37 @@
 
 <body>
   <header>
-    <!-- Barra azul -->
-    <div class="colorazul p-3"></div>
+    <nav class="navbar navbar-light fixed-top colorazul">
+      <div class="container-fluid">
+        <img src="images/LOGO.png" width="90px">
+        <!-- <a class="navbar-brand" href="#"><strong>Borá-la</strong> -->
+        <button class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar">
+          <img src="images/icons8-chevron-right-ios-16-favicons/Web/icons8-chevron-right-ios-16-32.png" width="20px">
+        </button>
+        <div class="offcanvas offcanvas-end corOFF" tabindex="-1" id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="carona.html">Carona</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
 
   </header>
   <main>
 
-    <div class="box">
-      <div id="overlay">
-        <div class="image">
-          <div class="trick">
 
-          </div>
-        </div>
-        <ul class="text">Walter Wright</ul>
-        <div class="text1">HTML + CSS</div>
-
-
-
-
-        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-          <div class="panel panel-default">
-            <div class="panel-heading " role="tab" id="headingOne">
-              <h4 class="panel-title ">
-                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded=""
-                  aria-controls="collapseOne">
-                  <div class="title  btn btn-danger btn-outline btn-lg">ABOUT WALTER</div>
-                </a>
-              </h4>
-            </div>
-            <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-              <div class="panel-body">
-                Walter has been building websites for years. He enjoys making unique websites and web projects. His
-                hobbies include photography, woodworking, leatherworking, fishing, and mid century modern furniture.
-              </div>
-            </div>
-          </div>
-          <div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="headingTwo">
-              <h4 class="panel-title">
-                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"
-                  aria-expanded="false" aria-controls="collapseTwo">
-                  <div class="title btn btn-danger btn-outline btn-lg">SOCIAL</div>
-                </a>
-              </h4>
-            </div>
-            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-              <div class="panel-body">
-                Walter has been building websites for years. He enjoys making unique websites and web projects. His
-                hobbies include photography, woodworking, leatherworking, fishing, and mid century modern furniture.
-              </div>
-            </div>
-          </div>
-          <div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="headingThree">
-              <h4 class="panel-title">
-                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree"
-                  aria-expanded="false" aria-controls="collapseThree">
-                  <div class="title btn btn-danger btn-outline btn-lg">CONTACT</div>
-                </a>
-              </h4>
-            </div>
-            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-              <div class="panel-body">
-
-
-
-                <form id="form" class="topBefore">
-
-                  <input id="name" type="text" placeholder="NAME">
-                  <input id="email" type="text" placeholder="E-MAIL">
-                  <textarea id="message" type="text" placeholder="MESSAGE"></textarea>
-                  <input id="submit" type="submit" value="Submit Now!">
-
-                </form>
-
-
-
-
-
-
-              </div>
-            </div>
-          </div>
-        </div>
   </main>
 
   <footer class="p-5 mt-5 corrodape text-light">
