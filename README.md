@@ -28,7 +28,7 @@
 
 <P>
 o projeto Bora-lá foi criado e desenvolvido pensando em facilitar o acesso de informação sobre o transporte publico de sua cidade ou região,ele funciona visando a locomoção mais rapida atraves de informacoes especificas como horario do transporte, rotas, linhas e informacoes adicionais. <br>
-O projeto tem um diferencial,o usuario pode pedir carona atraves do App ou até mesmo dar uma carona por conta propia,porém o pagamento não é feito atraves do App e sim entre os motoristas e pasageiros não nos responsabilizamos por esses pagamentos ou acordos
+O projeto tem um diferencial,o usuario pode pedir carona atraves do App ou até mesmo dar uma carona por conta propia,porém o pagamento não é feito atraves do App e sim entre os motoristas e pasageiros não nos responsabilizamos por esses pagamentos ou acordos.
 
 </p>
 
