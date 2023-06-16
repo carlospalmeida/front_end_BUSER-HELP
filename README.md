@@ -32,3 +32,29 @@ O projeto tem um diferencial,o usuario pode pedir carona atraves do App ou até 
 
 </p>
 
+<br>
+
+## Tecnologias utilizadas
+
+<p>
+
+### Front-end:
+
+<li> HTML 
+<li> CSS
+<li> Bootstrap 5
+<li> Javascript
+
+<br>
+
+### Back-end
+
+<li> php
+<li> Javascript
+<li> Laravel
+<li> Node.js
+<li> Blade
+<li> Mysql
+
+</p>
+
