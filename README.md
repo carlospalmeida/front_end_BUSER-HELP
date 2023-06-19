@@ -4,7 +4,7 @@
 
 <img alt="GitHub all releases" src="https://img.shields.io/github/downloads/carlospalmeida/front_end_BUSER-HELP/total">
 
-<img alt="Bower" src="https://img.shields.io/bower/l/mi">
+<img alt="license: MIT" src="https://img.shields.io/bower/l/mi">
 
 <br>
 
